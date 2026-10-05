@@ -11,26 +11,44 @@
  * 3. At the bottom, add:
  *    #endif
  */
-
+#ifndef CODE_H
+#define CODE_H
 /*
  * STEP 1: int_Point struct and init function
  * 
  * Define a struct named int_Point with two int fields: x and y
  * Write a function prototype to initialize it
  */
+struct int_Point
+ {
+    int x;
+    int y;
+
+};
+
+void init_int_point(struct int_Point *point, int x, int y);
+
+
 
 /* TODO: struct int_Point { } */
-
 /* TODO: void init_int_point(struct int_Point *point, int x, int y); */
-
 /*
  * STEP 2: double_Point struct and init function
  * 
  * Define a struct named double_Point with two double fields: x and y
  * Write a function prototype to initialize it
  */
+struct double_Point
+
+{
+    double x;
+    double y;
+
+} ;
+void init_int_point(struct int_Point *point, int x, int y);
 
 /* TODO: struct double_Point { } */
+
 
 /* TODO: void init_double_point(struct double_Point *point, double x, double y); */
 
@@ -45,6 +63,10 @@
 /* TODO: float sub(float a, float b); */
 /* TODO: float mul(float a, float b); */
 /* TODO: float divide(float a, float b); */
+float add(float a, float b); 
+float sub(float a, float b); 
+float mul(float a, float b); 
+float divide(float a, float b); 
 
 /*
  * STEP 5: Function pointer callback
@@ -58,14 +80,14 @@
  */
 
 /* TODO: double apply_operation(float *arr, int length, float (*operation)(float, float)); */
-
+double apply_operation(float *arr, int length, float (*operation)(float, float));
 /*
  * STEP 6: Typedef for function pointer
  * 
  * Define a typedef for the binary operation function pointer:
  * typedef float (*BinaryOp)(float, float);
  */
-
+typedef float (*BinaryOp)(float, float);
 /* TODO: typedef ... BinaryOp; */
 
 /*
@@ -76,9 +98,9 @@
  */
 
 /* TODO: typedef struct { double x; double y; } DoublePoint; */
-
+typedef struct { double x; double y; } DoublePoint;
 /* TODO: void init_double_point_typedef(DoublePoint *point, double x, double y); */
-
+ void init_double_point_typedef(DoublePoint *point, double x, double y);
 /*
  * STEP 8: Calc struct with function pointer fields
  * 
@@ -89,5 +111,13 @@
  */
 
 /* TODO: struct Calc { } */
-
+struct Calc 
+{
+    float a;
+    float b;
+    BinaryOp add, sub, mul, div;
+ };
 /* TODO: void init_calc(struct Calc *calc); */
+void init_calc(struct Calc *calc);
+
+#endif
