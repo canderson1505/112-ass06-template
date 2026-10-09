@@ -1,12 +1,10 @@
-/*
- * code.h - Header file for Lab 4
+/*/ code.h - Header file for Lab 4
  * 
  * Instructions:
- * 1. At the top, add include guards to prevent multiple inclusion:
- *    #ifndef CODE_H
+ *1. At the top, add include guards to prevent multiple inclusion:   #ifndef CODE_H
  *    #define CODE_H
  * 
- * 2. Write function prototypes below
+ *2. Write function prototypes below
  * 
  * 3. At the bottom, add:
  *    #endif
@@ -98,7 +96,13 @@ typedef float (*BinaryOp)(float, float);
  */
 
 /* TODO: typedef struct { double x; double y; } DoublePoint; */
-typedef struct { double x; double y; } DoublePoint;
+typedef struct
+{
+    double x;
+    double y;
+}
+Doublepoint;
+
 /* TODO: void init_double_point_typedef(DoublePoint *point, double x, double y); */
  void init_double_point_typedef(DoublePoint *point, double x, double y);
 /*
