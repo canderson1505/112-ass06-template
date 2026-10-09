@@ -43,7 +43,7 @@ struct double_Point
     double y;
 
 } ;
-void init_int_point(struct double_Point *point, int x, int y);
+void init_double_point(struct double_Point *point, double x, double y);
 
 /* TODO: struct double_Point { } */
 
