@@ -43,7 +43,7 @@ struct double_Point
     double y;
 
 } ;
-void init_int_point(struct int_Point *point, int x, int y);
+void init_int_point(struct double_Point *point, int x, int y);
 
 /* TODO: struct double_Point { } */
 
@@ -101,10 +101,10 @@ typedef struct
     double x;
     double y;
 }
-Doublepoint;
+doublePoint;
 
 /* TODO: void init_double_point_typedef(DoublePoint *point, double x, double y); */
- void init_double_point_typedef(DoublePoint *point, double x, double y);
+ void init_double_point_typedef(doublePoint *point, double x, double y);
 /*
  * STEP 8: Calc struct with function pointer fields
  * 
