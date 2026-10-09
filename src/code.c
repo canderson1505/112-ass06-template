@@ -142,7 +142,7 @@ double apply_operation(float *arr, int length, float (*operation)(float, float))
 // {
 //     /* TODO:*/
 // }
-void init_double_point_typedef(DoublePoint *point, double x, double y)
+void init_double_point_typedef(doublePoint *point, double x, double y)
 
 {
     point->x = x;
