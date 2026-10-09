@@ -1,5 +1,6 @@
-//char *AUTHOR_NAME        = (char *) "Your Name";
-//char *AUTHOR_AUTHORSHIP  = (char *) "I acknowledge that I have worked on this
+// Corey Anderson
+// CSCI 112 Fall 2026
+//"I acknowledge that I have worked on this
 // assignment independently, except where explicitly noted and referenced.
 // Any collaboration or use of external resources has been properly cited.
 // I am fully aware of the consequences of academic dishonesty and agree to
@@ -54,8 +55,8 @@ void init_int_point(struct int_Point *point, int x, int y)
 
 void init_double_point(struct double_Point *point, double x, double y)
 {
-    point->x =x;
-    point->y =y; 
+    point->x = x;
+    point->y = y; 
 }
 
 /*
@@ -141,7 +142,9 @@ double apply_operation(float *arr, int length, float (*operation)(float, float))
 // {
 //     /* TODO:*/
 // }
-void init_double_point_typedef(DoublePoint *point, double x, double y){
+void init_double_point_typedef(DoublePoint *point, double x, double y)
+
+{
     point->x = x;
     point->y = y;
 }
@@ -178,3 +181,4 @@ void init_calc(struct Calc *calc)
     calc->div = divide;
 
 }
+//test 3
